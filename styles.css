@@ -53,6 +53,9 @@
     background-color: hsla(0, 0%, 0%, 50%);
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 .tools {
@@ -72,19 +75,27 @@
     background: #768399;
     border-radius: 20px;
     padding: 10px 20px 10px 20px;
-    transition: 0.1s linear;
+    transition: 0.5s;
 }
 
 .start-btn:hover {
-    border-radius: 0;
+    background-color: #9aa6bc;
 }
 
 .restart-btn {
-    transition: 0.2s linear;
+    transition: 0.1s linear;
 }
 
 .settings-btn:hover {
-    transform: rotate(180deg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/17/Mangekyou_Sharingan_Itachi.svg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    color: transparent;
+    transform: rotate(360deg);
 }
 
 .settings-btn {
