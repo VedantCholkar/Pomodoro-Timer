@@ -17,10 +17,7 @@
     <div id="petals"></div>
     <div class="content">
         <div class="title">work & anime timer</div>
-        <div class="timers">
-            <div class="work" onclick="workTime()">📖 Work</div>
-            <div class="anime" onclick="animeTime()">💻 Anime</div>
-        </div>
+        <div class="work">Recommended:<br>- 1 hour work<br>- 25 minutes anime</div>
         <div class="time">
             <div class="minutes">25</div>
             <div class="colon">:</div>
@@ -28,7 +25,6 @@
         </div>
         <div class="tools">
             <div class="start-btn">Start</div>
-            <div class="restart-btn">↻</div>
             <div class="settings-btn">⚙</div>
         </div>
     </div>
@@ -219,6 +215,7 @@
             startStop = document.querySelector(".start-btn"),
             setting = document.querySelector(".settings-btn");
 
+
         let minutes = document.querySelector(".minutes").innerHTML,
             seconds = document.querySelector(".seconds").innerHTML,
             progress = null,
@@ -230,15 +227,6 @@
             secRem = 0,
             minRem = 0;
 
-        function workTime() {
-            document.getElementsByClassName(".minutes").innerHTML = 25
-            document.getElementsByClassName(".seconds").innerHTML = 00
-        }
-
-        function animeTime() {
-            document.getElementsByClassName(".minutes").innerHTML = 15
-            document.getElementsByClassName(".seconds").innerHTML = 00
-        }
         function progressTrack() {
             progressStart++;
 
